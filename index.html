@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>The Data Refining Company</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming soon... The Data Refining Company</title>
+    <link rel="icon" href="img/logo-pic.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      body {
-        display: flex;
-        height: 100vh;
+      body,
+      html {
+        height: 100%;
         margin: 0;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
         color: rgb(67, 85, 95);
-        font-family: sans-serif;
+        font-family: 'Enriqueta', serif;
       }
-      .logo img {
-        display: block;
-        margin: 0 auto;
-        width: 250px;
-      }
-      .logo p {
-        font-size: 0.7em;
-        position: absolute;
-        bottom: 50px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
+      .footer-text {
+        color: rgba(67, 85, 95, 0.5);
       }
     </style>
-    <link rel="icon" href="img/logo-pic.png" type="image/png">
   </head>
-  </head>
-  <body>
-    <div class="logo">
-      <img src="img/logo-nobg.png" alt="The Data Refining Company" />
-      <p>...coming soon...</p>
+  <body
+    class="flex flex-col justify-between items-center text-center bg-gray-100"
+  >
+    <div class="flex flex-col justify-center items-center flex-grow">
+      <div class="logo mb-6">
+        <img
+          src="img/logo-nobg.png"
+          alt="The Data Refining Company"
+          class="max-w-xs"
+        />
+      </div>
+      <div class="coming-soon mb-8 text-lg">
+        <h2>...coming soon...</h2>
+      </div>
     </div>
-    </div>
+    <div class="footer-text text-xs py-4 w-full">
+      <p>The Data Refining Company</p>
+      <p>Established 2024</p>
+      <p>London, UK</p>
     </div>
   </body>
 </html>
